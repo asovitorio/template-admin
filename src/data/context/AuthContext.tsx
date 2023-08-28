@@ -13,7 +13,7 @@ import Cookies from 'js-cookie'
 interface AuthContextProps {
   usuario?: Usuario
   carregando?: boolean
-  login?: (email: string, senha: string) => Promise<void>
+  login?: (email: string, senha: string) => Promise<void> 
   cadastrar?: (email: string, senha: string) => Promise<void> 
   loginGoogle?: () => Promise<void>
   logout?: () => Promise<void>

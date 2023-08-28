@@ -21,9 +21,9 @@ export default function Autenticacao(props: AutenticacaoProps) {
   async function submeter() {
     try {
       if (modo === 'login') {
-        await login(email, senha)
+        await login?.(email, senha)
       } else {
-        await cadastrar(email, senha)
+        await cadastrar?.(email, senha)
       }
     } catch (error) {
       if (error instanceof Error) exibirErro(error.message)

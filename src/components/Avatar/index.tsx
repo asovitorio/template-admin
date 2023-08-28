@@ -17,6 +17,7 @@ console.log(isImage,usuario?.imagemUrl );
     >
       <Link href={'/perfil'}>
         <img
+        
           src={usuario?.imagemUrl ==='null' || undefined ? '/images/avatar.png':usuario?.imagemUrl}
           alt="imagem do avatar do usuário"
           className={`
